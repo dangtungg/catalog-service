@@ -30,7 +30,7 @@ spring:
     driver-class-name: org.postgresql.Driver
     username: admin
     password: 123456
-    url: jdbc:postgresql://localhost:5432/my_sample_db
+    url: jdbc:postgresql://localhost:5432/polardb_catalog
     hikari:
       connection-timeout: 2000 #ms
       maximum-pool-size: 5
