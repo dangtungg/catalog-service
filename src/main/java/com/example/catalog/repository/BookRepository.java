@@ -1,14 +1,14 @@
 package com.example.catalog.repository;
 
-import java.util.Optional;
-
 import com.example.catalog.entity.Book;
 import org.springframework.data.jdbc.repository.query.Modifying;
 import org.springframework.data.jdbc.repository.query.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.transaction.annotation.Transactional;
 
-public interface BookRepository extends CrudRepository<Book,Long> {
+import java.util.Optional;
+
+public interface BookRepository extends CrudRepository<Book, Long> {
 
     Optional<Book> findByIsbn(String isbn);
 

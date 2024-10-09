@@ -6,8 +6,6 @@ import com.example.catalog.entity.Book;
 import com.example.catalog.repository.BookRepository;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service
 public class BookService {
 
@@ -49,6 +47,8 @@ public class BookService {
                             book.publisher(),
                             existingBook.createdDate(),
                             existingBook.lastModifiedDate(),
+                            existingBook.createdBy(),
+                            existingBook.lastModifiedBy(),
                             existingBook.version());
                     return bookRepository.save(bookToUpdate);
                 })
